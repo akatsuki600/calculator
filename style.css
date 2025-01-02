@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root {
+--columbia-blue: #CAEAFF;
+--atomic-tangerine: #FF915E;
+--thistle: #E8D1FB;
+--vanilla: #FBEFBD;
+--mimi-pink: #F8DDEC;
+--tea-green: #CBE4C4;
+--dropShadowY: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;    
+}
+
+body {
+    background-color: skyblue;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainbody {
+    background-color:pink;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.41);
+}
+
+main {
+    /* background-color: red; */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonsSection {
+    background-color: rgb(255, 125, 166);
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10px rgba(60, 60, 60, 0.612);
+    height: 520px;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    height: 100%;
+}
+
+#buttons > div:nth-child(-n+5) {
+    background-color:#FBEFBD;
+    box-shadow: 0px var(--dropShadowY) #e9d18c ;
+}
+#buttons > div:nth-child(n+6):nth-child(-n+10) {
+    background-color: #CBE4C4;
+    box-shadow: 0px var(--dropShadowY) #a3ba9d ;
+}
+
+#buttons > div:nth-child(n+11):nth-child(-n+15) {
+    background-color:#FF915E;
+    box-shadow: 0px var(--dropShadowY) rgb(200, 100, 53) ;
+}
+
+#buttons > div:nth-child(n+16):nth-child(-n+20) {
+    background-color: #E8D1FB;
+    box-shadow: 0px var(--dropShadowY) #d0a9f0 ;
+}
+
+
+#buttons > div:nth-child(n+21):nth-child(-n+25) {
+    background-color: #c6eaff;
+    box-shadow: 0px var(--dropShadowY) #adcaea;
+}
+
+#buttons > div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Orbitron;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color: rebeccapurple;
+    user-select: none;    
+}
+
+#buttons > div:active {
+    transform: translateY(6px);
+    --dropShadowY: 4px;
+}
+
+#answerScreen {
+    background-color: orange;
+    box-shadow: inset 0 0 5px rgb(60, 60, 60);
+    border-radius: 50px;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: Orbitron;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    font-size: 5em;
+}
+
